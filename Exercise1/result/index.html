@@ -1,0 +1,200 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercise 1</title>
+    <meta name="description" content="Payment Form">
+    <meta name="author" content="Antanas">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+<form action="" class="needs-validation" novalidate id="form" >
+    <h2>
+        <b>Buyer Information</b>
+    </h2>
+
+    <div class="form-row">
+        <div class="col-md-6 mb-6">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="John" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid first name.
+            </div>
+        </div>
+        <div class="col-md-6 mb-6">
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Travolta" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid last name.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-6 mb-6">
+            <label for="email">Email:</label>
+            <input type="email"  class="form-control" name="email" id="email" placeholder="example@yahoo.com" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid email.
+            </div>
+        </div>
+        <div class="col-md-6 mb-6">
+            <label for="phone">Phone:</label>
+            <input type="number" class="form-control" name="phone" id="phone" placeholder="+1894444553" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid telephone number.
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form-row">
+        <div class="col-md-6 mb-6">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Driftwoord Dr. 78" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid address.
+            </div>
+
+        </div>
+        <div class="col-md-6 mb-6">
+
+            <label for="city">City:</label>
+            <input type="text" class="form-control" name="city" id="city" placeholder="Los Angeles" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid city.
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-row">
+
+        <div class="col-md-6 mb-6">
+
+            <label for="zipcode">ZIP Code:</label>
+            <input type="number" class="form-control" name="city" id="zipcode" placeholder="12345" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid zip code.
+            </div>
+        </div>
+        <div class="col-md-6 mb-6">
+            <label for="country">Country:</label>
+            <input type="text" class="form-control" name="country" id="country" placeholder="United States" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid country.
+            </div>
+        </div>
+    </div>
+
+    <h2>
+        <b>Payment Information</b>
+    </h2>
+    <div class="form-row">
+        <div class="col-md-6 mb-6">
+
+            <label for="payment-method">Payment method:</label>
+            <select name="payment-method" class="form-control" id="payment-method"  required>
+                <option value="" selected disabled>Select payment option</option>
+                <option value="Cash">Cash</option>
+                <option value="Credit Card">Card</option>
+            </select>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please select valid payment option.
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-6" id="address-for-cash">
+            <b>To pay for your order, you must come to our office:</b>
+            <br>
+            <br>
+            <b>645 Coral Ridge Dr # 211</b><br>
+            <b>Coral Springs</b><br>
+            <b>FL 33076, USA</b><br>
+        </div>
+        <div class="col-md-6 mb-6" id="card-validation">
+
+            <label for="credit-card-number">Credit Card Number:</label>
+            <input type="number" class="form-control" name="credit-card-number" id="credit-card-number" placeholder="Enter your credit card number" required><br>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter valid credit card number.
+            </div>
+            <div id="card-type">
+                <div id="Visa">Visa</div>
+                <div id="Mastercard">MasterCard</div>
+                <div id="American-Express">American Express</div>
+                <div id="question-mark"> ? </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+
+</form>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+<script src="assets/js/form-control.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
